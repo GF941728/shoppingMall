@@ -1,2 +1,14 @@
 server:
   port: 8050
+spring:
+  application:
+    name: shopping-Mall
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
